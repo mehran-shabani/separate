@@ -40,7 +40,7 @@ soundfile==0.14.0
 speechbrain==1.0.3
 sympy==1.13.1
 tokenizers==0.23.2
-torch==2.5.1+cpu
+torch==2.13.0
 torchaudio==2.5.1+cpu
 tqdm==4.70.1
 typing_extensions==4.16.0
