@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Transcript | صدای تو، نوشتهٔ تو</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<main>
+  <header><a class="brand" href="/" aria-label="Transcript"><span class="brand-icon">◖ııı◗</span><strong>Transcript<span>TRANSCRIPT / LOCAL STUDIO</span></strong></a><div class="private-badge"><i></i> کاملاً محلی</div></header>
+  <section class="intro"><div class="eyebrow">از صدا به کلمه</div><h1>تو حرف بزن.<br><span>کلمه‌ها اینجا می‌مانند.</span></h1><p>یک فضای آرام برای نوشتن با صدای خودت.<br>با ویسپر، روی همین کامپیوتر و بدون ارسال صدا به اینترنت.</p></section>
+  <div class="workspace">
+    <section class="recorder panel" aria-label="ضبط صدا">
+      <div class="panel-top"><span class="label">استودیوی صدا</span><span class="chip" id="modeChip">میکروفون</span></div>
+      <div class="orb-wrap"><div class="orb" id="orb"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="17" y="6" width="14" height="25" rx="7" stroke="currentColor" stroke-width="2.5"/><path d="M11 23a13 13 0 0 0 26 0M24 36v7m-7 0h14" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></div></div>
+      <div class="timer" id="timer">00:00</div><div class="wave" id="wave" aria-hidden="true"></div>
+      <p class="record-hint" id="recordHint">برای شروع، میکروفون را روشن کن</p>
+      <label class="language-label" for="language">زبان گفتار<select id="language"><option value="fa">فارسی</option><option value="auto">تشخیص خودکار</option><option value="en">English</option></select></label>
+      <button id="recordBtn" class="primary" disabled><span id="recordIcon">●</span><span id="recordLabel">در حال آماده‌سازی مدل…</span></button>
+      <div class="divider"><span>یا یک صدای آماده</span></div>
+      <button id="uploadBtn" class="upload" disabled><span>↥</span> انتخاب فایل صوتی <small>WAV · MP3 · M4A · OGG · MP4</small></button>
+      <input id="fileInput" type="file" accept="audio/*,video/mp4,video/webm,.m4a,.ogg,.flac,.3gp" hidden>
+      <div class="model-note"><span class="status-dot" id="statusDot"></span><span id="modelStatus">ویسپر در حال بارگذاری است</span></div>
+    </section>
+    <section class="editor panel" aria-label="متن گفتار">
+      <div class="panel-top"><div><span class="label">نوشتهٔ تو</span><span class="editor-sub">متن را همین‌جا ویرایش کن</span></div><span class="live-badge" id="liveBadge">آمادهٔ شنیدن</span></div>
+      <div id="emptyState" class="empty-state"><div class="paper-icon">≋</div><h2>هر فکر، یک شروع تازه</h2><p>صحبت کن یا یک فایل صوتی انتخاب کن.<br>متن گفتار تو در این قسمت ظاهر می‌شود.</p><span class="tiny-line"></span></div>
+      <textarea id="transcript" dir="auto" aria-label="متن قابل ویرایش" spellcheck="false" placeholder=""></textarea>
+      <div class="editor-footer"><span id="wordCount">۰ کلمه</span><div class="actions"><button id="clearBtn" title="پاک کردن متن">پاک کردن</button><button id="copyBtn">کپی متن</button><button id="downloadBtn" class="download">↓ دریافت TXT</button></div></div>
+    </section>
+  </div>
+  <div class="notice" id="notice" role="status" aria-live="polite">مدل موجود پروژه در حال آماده‌سازی است؛ اولین بار ممکن است کمی طول بکشد.</div>
+  <footer><span>صدای تو از این دستگاه خارج نمی‌شود.</span><span dir="ltr">WHISPER LARGE V3 TURBO <b>·</b> CPU / INT8</span></footer>
+</main>
+<script src="/app.js"></script>
+</body></html>

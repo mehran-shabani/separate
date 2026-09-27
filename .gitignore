@@ -1,0 +1,81 @@
+# Local Python environments and downloaded runtime packages
+.venv/
+venv/
+env/
+.model_packages/
+
+# Models and large machine-learning artifacts
+.models/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
+*.bin
+*.npy
+*.npz
+
+# Private recordings, generated audio, and processing results
+/output/
+recordings/
+uploads/
+*.wav
+*.mp3
+*.m4a
+*.ogg
+*.opus
+*.flac
+*.aac
+*.wma
+*.aiff
+*.aif
+*.3gp
+*.mp4
+*.webm
+*.mkv
+*.mov
+*.avi
+transcript-*.txt
+
+# Exported archives
+*.zip
+*.7z
+*.tar
+*.tar.gz
+*.tgz
+
+# Python caches, build artifacts, and test/tool caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+/build/
+/dist/
+
+# Secrets and machine-specific settings
+.env
+.env.*
+!.env.example
+!.env.template
+.vscode/
+.idea/
+
+# Logs, partial downloads, and temporary files
+*.log
+*.tmp
+*.temp
+*.part
+*.swp
+*.swo
+*~
+
+# Windows and macOS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
